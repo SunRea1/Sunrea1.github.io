@@ -6,26 +6,25 @@
     <description>SunR1&#39;s Internet Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2024 20:03:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2024 20:47:48 +0800</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Tue, 30 Jul 2024 20:03:50 +0800</pubDate>
+      <title>Test3</title>
+      <link>/blog/test2/</link>
+      <pubDate>Tue, 30 Jul 2024 20:47:48 +0800</pubDate>
       
-      <guid>/about/</guid>
-      <description>&lt;h2 id=&#34;没错今天又开始捣鼓hugo了&#34; &gt;
+      <guid>/blog/test2/</guid>
+      <description>&lt;h2 id=&#34;这是第二次测试&#34; &gt;
 &lt;div&gt;
-    &lt;a href=&#34;#%e6%b2%a1%e9%94%99%e4%bb%8a%e5%a4%a9%e5%8f%88%e5%bc%80%e5%a7%8b%e6%8d%a3%e9%bc%93hugo%e4%ba%86&#34;&gt;
+    &lt;a href=&#34;#%e8%bf%99%e6%98%af%e7%ac%ac%e4%ba%8c%e6%ac%a1%e6%b5%8b%e8%af%95&#34;&gt;
         #
     &lt;/a&gt;
-    没错，今天又开始捣鼓hugo了
+    这是第二次测试
 &lt;/div&gt;
 &lt;/h2&gt;
-&lt;p&gt;time.date&lt;/p&gt;
 </description>
     </item>
     
