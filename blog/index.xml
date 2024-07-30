@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on SunR1&#39;s Internet Garden</title>
+    <link>/blog/</link>
+    <description>SunR1&#39;s Internet Garden (Blogs)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Jul 2024 20:03:50 +0800</lastBuildDate>
+    
+    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/blog/about/</link>
+      <pubDate>Tue, 30 Jul 2024 20:03:50 +0800</pubDate>
+      
+      <guid>/blog/about/</guid>
+      <description>&lt;h2 id=&#34;没错今天又开始捣鼓hugo了&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#%e6%b2%a1%e9%94%99%e4%bb%8a%e5%a4%a9%e5%8f%88%e5%bc%80%e5%a7%8b%e6%8d%a3%e9%bc%93hugo%e4%ba%86&#34;&gt;
+        #
+    &lt;/a&gt;
+    没错，今天又开始捣鼓hugo了
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;time.date&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

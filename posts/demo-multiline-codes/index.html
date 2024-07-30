@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Demo - Multiline Codes - SunR1&rsquo;s Internet Garden</title>
+
+<meta name="description" content="Codes, Codefences, and Syntax Highlighting.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+
+
+
+    
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.03df79c682b91915c7cd261ecd1a6ec4d0fe668c98fa46310d0fbade319b11bd.css" integrity="sha256-A995xoK5GRXHzSYezRpuxND&#43;ZoyY&#43;kYxDQ&#43;63jGbEb0=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">SunR1&#39;s Internet Garden</a>
+</h1>
+
+        
+
+
+
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "light"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav></nav>
+
+
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Demo - Multiline Codes</h1>
+                
+
+            </header>
+            
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2024-04-23">2024-04-23</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/demo-multiline-codes/">/posts/demo-multiline-codes/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">Junyi</a>
+
+
+    <div class="post-taxonomies">
+        
+        
+            <ul class="post-tags">
+                
+                    
+                    <li><a href="/tags/icons/">#Icons</a></li>
+                
+                    
+                    <li><a href="/tags/anubis2/">#Anubis2</a></li>
+                
+                    
+                    <li><a href="/tags/hugo/">#Hugo</a></li>
+                
+            </ul>
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#line-numbers-highlight-lines">Line Numbers, Highlight Lines</a>
+      <ul>
+        <li><a href="#line-number-table-and-highlight-lines">Line Number (table) and Highlight Lines</a></li>
+        <li><a href="#line-number-true-and-highlight-lines">Line Number (true) and Highlight Lines</a></li>
+        <li><a href="#line-number-inline-and-highlight-lines">Line Number (inline) and Highlight Lines</a></li>
+        <li><a href="#line-number-false-and-highlight-lines">Line Number (false) and Highlight Lines</a></li>
+      </ul>
+    </li>
+    <li><a href="#anchor-inline-shortcode">Anchor, Inline, Shortcode</a>
+      <ul>
+        <li><a href="#line-number-table-and-highlight-lines-and-anchor">Line Number (table) and Highlight Lines and Anchor</a></li>
+        <li><a href="#line-number-table-and-highlight-inline--not-supported-by-anubis2">Line Number (table) and Highlight Inline (❌ Not supported by Anubis2)</a></li>
+        <li><a href="#highlight-shortcode-with-line-number-table-with-highlight-lines-and-anchor">Highlight shortcode, with Line Number (table), with Highlight Lines and Anchor</a></li>
+        <li><a href="#highlight-shortcode-with-line-number-inline-with-highlight-lines-and-anchor">Highlight shortcode, with Line Number (inline), with Highlight Lines and Anchor</a></li>
+        <li><a href="#highlight-shortcode-no-line-number-with-highlight-lines-and-anchor">Highlight shortcode, No Line Number, With Highlight Lines and Anchor</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>There are 9 tests.</p>
+<h2 id="line-numbers-highlight-lines" >
+<div>
+    <a href="#line-numbers-highlight-lines">
+        #
+    </a>
+    Line Numbers, Highlight Lines
+</div>
+</h2>
+<h3 id="line-number-table-and-highlight-lines" >
+<div>
+    <a href="#line-number-table-and-highlight-lines">
+        ##
+    </a>
+    Line Number (table) and Highlight Lines
+</div>
+</h3>
+<p><code>linenos=table</code> will give copy-and-paste friendly code blocks.</p>
+<pre><code>```c {linenos=table, hl_lines=[1,&quot;3-4&quot;,8], linenostart=199}
+// codes ...
+```
+</code></pre>
+<div class="highlight"><div style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201
+</span></span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>    <span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>        <span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>        <span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="line-number-true-and-highlight-lines" >
+<div>
+    <a href="#line-number-true-and-highlight-lines">
+        ##
+    </a>
+    Line Number (true) and Highlight Lines
+</div>
+</h3>
+<pre><code>```c {linenos=true, hl_lines=[1,&quot;3-4&quot;,8], linenostart=1}
+// codes ...
+```
+</code></pre>
+<div class="highlight"><div style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>    <span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>                <span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>        <span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="line-number-inline-and-highlight-lines" >
+<div>
+    <a href="#line-number-inline-and-highlight-lines">
+        ##
+    </a>
+    Line Number (inline) and Highlight Lines
+</div>
+</h3>
+<pre><code>```c {linenos=inline, hl_lines=[1,&quot;3-4&quot;,8], linenostart=1}
+// codes ...
+```
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>                <span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#78787e"></span>        <span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#78787e"></span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>}
+</span></span></code></pre></div><h3 id="line-number-false-and-highlight-lines" >
+<div>
+    <a href="#line-number-false-and-highlight-lines">
+        ##
+    </a>
+    Line Number (false) and Highlight Lines
+</div>
+</h3>
+<p><code>linenos=false</code> will turn off line numbers if it’s configured to be on in site configuration.</p>
+<pre><code>```c {linenos=false, hl_lines=[1,&quot;3-4&quot;,8]}
+// codes ...
+```
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>    <span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>                <span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>        <span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>}
+</span></span></code></pre></div><h2 id="anchor-inline-shortcode" >
+<div>
+    <a href="#anchor-inline-shortcode">
+        #
+    </a>
+    Anchor, Inline, Shortcode
+</div>
+</h2>
+<h3 id="line-number-table-and-highlight-lines-and-anchor" >
+<div>
+    <a href="#line-number-table-and-highlight-lines-and-anchor">
+        ##
+    </a>
+    Line Number (table) and Highlight Lines and Anchor
+</div>
+</h3>
+<p>Now you can click on the line number to get a link to that line.</p>
+<pre><code>```c {linenos=table, hl_lines=[1,&quot;3-4&quot;,8], linenostart=199, anchorlinenos=true}
+// codes ...
+```
+</code></pre>
+<div class="highlight"><div style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-199"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-199">199</a>
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-200"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-200">200</a>
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-201"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-201">201</a>
+</span></span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-202"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-202">202</a>
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-203"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-203">203</a>
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-204"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-204">204</a>
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-205"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-205">205</a>
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-4-206"><a style="outline:none;text-decoration:none;color:inherit" href="#hl-4-206">206</a>
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>    <span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>                <span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>        <span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="line-number-table-and-highlight-inline--not-supported-by-anubis2" >
+<div>
+    <a href="#line-number-table-and-highlight-inline--not-supported-by-anubis2">
+        ##
+    </a>
+    Line Number (table) and Highlight Inline (❌ Not supported by Anubis2)
+</div>
+</h3>
+<pre><code>```c {linenos=true,hl_lines=[1,&quot;3-4&quot;,8], hl_inline=true}
+// codes ...
+```
+</code></pre>
+<div style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></span></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<code class="code-inline language-c"><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+    <span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+    <span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+                <span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span><span style="color:#78787e"></span>        <span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span><span style="color:#78787e"></span>    }
+    <span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+}
+</code></td></tr></table>
+</div>
+<h3 id="highlight-shortcode-with-line-number-table-with-highlight-lines-and-anchor" >
+<div>
+    <a href="#highlight-shortcode-with-line-number-table-with-highlight-lines-and-anchor">
+        ##
+    </a>
+    Highlight shortcode, with Line Number (table), with Highlight Lines and Anchor
+</div>
+</h3>
+<pre><code>{{&lt; highlight c &quot;linenos=table,hl_lines=1 3-4 8, anchorlinenos=true&quot; &gt;}}
+// codes
+{{&lt; /highlight &gt;}}
+</code></pre>
+<div class="highlight"><div style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="1"><a style="outline:none;text-decoration:none;color:inherit" href="#1">1</a>
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="2"><a style="outline:none;text-decoration:none;color:inherit" href="#2">2</a>
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="3"><a style="outline:none;text-decoration:none;color:inherit" href="#3">3</a>
+</span></span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="4"><a style="outline:none;text-decoration:none;color:inherit" href="#4">4</a>
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="5"><a style="outline:none;text-decoration:none;color:inherit" href="#5">5</a>
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="6"><a style="outline:none;text-decoration:none;color:inherit" href="#6">6</a>
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="7"><a style="outline:none;text-decoration:none;color:inherit" href="#7">7</a>
+</span><span style="background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="8"><a style="outline:none;text-decoration:none;color:inherit" href="#8">8</a>
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="highlight-shortcode-with-line-number-inline-with-highlight-lines-and-anchor" >
+<div>
+    <a href="#highlight-shortcode-with-line-number-inline-with-highlight-lines-and-anchor">
+        ##
+    </a>
+    Highlight shortcode, with Line Number (inline), with Highlight Lines and Anchor
+</div>
+</h3>
+<pre><code>{{&lt; highlight c &quot;linenos=inline,hl_lines=1 3-4 8, anchorlinenos=true&quot; &gt;}}
+// codes
+{{&lt; /highlight &gt;}}
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="1"><a style="outline:none;text-decoration:none;color:inherit" href="#1">1</a></span><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="2"><a style="outline:none;text-decoration:none;color:inherit" href="#2">2</a></span><span><span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="3"><a style="outline:none;text-decoration:none;color:inherit" href="#3">3</a></span><span><span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="4"><a style="outline:none;text-decoration:none;color:inherit" href="#4">4</a></span><span><span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="5"><a style="outline:none;text-decoration:none;color:inherit" href="#5">5</a></span><span><span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="6"><a style="outline:none;text-decoration:none;color:inherit" href="#6">6</a></span><span><span style="color:#78787e"></span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="7"><a style="outline:none;text-decoration:none;color:inherit" href="#7">7</a></span><span><span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="8"><a style="outline:none;text-decoration:none;color:inherit" href="#8">8</a></span><span>}</span></span></code></pre></div>
+<h3 id="highlight-shortcode-no-line-number-with-highlight-lines-and-anchor" >
+<div>
+    <a href="#highlight-shortcode-no-line-number-with-highlight-lines-and-anchor">
+        ##
+    </a>
+    Highlight shortcode, No Line Number, With Highlight Lines and Anchor
+</div>
+</h3>
+<pre><code>{{&lt; highlight c &quot;linenos=false,hl_lines=1 3-4 8, anchorlinenos=true&quot; &gt;}}
+// codes
+{{&lt; /highlight &gt;}}
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-c" data-lang="c"><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#9aedfe">int</span> <span style="color:#57c7ff">main</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#9aedfe">int</span> a <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#ff6ac1">if</span> (a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">999</span>)
+</span></span><span style="display:flex; background-color:#3d3f4a"><span><span style="color:#78787e">// This is a very long comment to test the `overflow` attribute defined in CSS. The `overflow` property in CSS deals with the content when it overflows the block-level container. It can take the following values: `visible` (default), `hidden`, `scroll`, `auto`, and `clip`.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e">// If `visible` is specified, the content is not clipped and can render outside the container. If `hidden` is specified, the content is clipped and the rest of the content will be invisible. If `scroll` is specified, the browser should provide a scrolling mechanism for the user to access the clipped content.
+</span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">return</span> <span style="color:#ff9f43">0</span>;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span>}</span></span></code></pre></div>
+        </div>
+
+    </article>
+
+    
+    
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            © SunR1, 2024
+            
+        </div>
+        <div style="display:flex;align-items: center">
+            
+            
+            
+            
+            
+            
+        </div>
+        <div>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/Junyi-99/hugo-theme-anubis2">Anubis2</a>.<br>
+            
+
+        </div>
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me"></a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>
