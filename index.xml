@@ -5,80 +5,74 @@
     <link>/</link>
     <description>SunR1&#39;s Internet Garden</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 02 Aug 2024 17:50:52 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 02 Aug 2024 18:33:01 +0800</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Allquietinpeking</title>
+      <title>About</title>
+      <link>/about/about/</link>
+      <pubDate>Fri, 02 Aug 2024 18:33:01 +0800</pubDate>
+      
+      <guid>/about/about/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-sunr1s-internet-garden-this-is-a-hugo-site-which-im-still-learning&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#welcome-to-sunr1s-internet-garden-this-is-a-hugo-site-which-im-still-learning&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Welcome to SunR1&amp;rsquo;s internet garden, this is a hugo site, which I&amp;rsquo;m still learning.
+&lt;/div&gt;
+&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>看完北平无战事 写一些感想</title>
       <link>/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</link>
       <pubDate>Fri, 02 Aug 2024 17:50:52 +0800</pubDate>
       
       <guid>/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</guid>
-      <description>&lt;h2 id=&#34;看完北平无战事-写一些感想&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#%e7%9c%8b%e5%ae%8c%e5%8c%97%e5%b9%b3%e6%97%a0%e6%88%98%e4%ba%8b-%e5%86%99%e4%b8%80%e4%ba%9b%e6%84%9f%e6%83%b3&#34;&gt;
-        #
-    &lt;/a&gt;
-    看完北平无战事 写一些感想
-&lt;/div&gt;
-&lt;/h2&gt;
-&lt;h3 id=&#34;为什么要看这部剧&#34; &gt;
+      <description>&lt;h1 id=&#34;为什么要看这部剧&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e7%9c%8b%e8%bf%99%e9%83%a8%e5%89%a7&#34;&gt;
         ##
     &lt;/a&gt;
     为什么要看这部剧？
 &lt;/div&gt;
-&lt;/h3&gt;
+&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;有幸看了刘和平老师的《大明王朝1566》这本书，深深的被故事情节所吸引啊，感觉里面的人个个都是人精，我还有好多可以学习的。
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;最近感觉自己又有些内耗，于是想找部剧看，放慢节奏，也让自己沉溺其中，不去想生活中的苟且吧，算是有点想逃避的感觉。于是乎，挑选一部好剧，大概率能吸引我的剧当让是一切的基础了，近年来完整看过的几部剧，想想有《狂飙》，《白夜追凶》，唉，有点想不起来了，但《狂飙》是让我很难受的一部剧，不是因为不精彩，而是因为前面太精彩但后面有点被“政治正确”了，导致我看到后面很难受。所以呢，选一部与当代政治没有太强联系的剧是我的第一标准（但其实最后也有点没挑太好，但好在《北平》这部剧本身够硬），其次呢，刘和平这三个字我认为是一部好剧很好的一个保证，所以看了一圈《北平》这部剧在豆瓣上有着9.0的高分，所以就选了这个。好了，感觉这部分写的有点多但感觉也不怎么详细。&lt;/p&gt;
-&lt;h3 id=&#34;heading&#34; &gt;
+&lt;h1 id=&#34;让我映像深刻的人物&#34; &gt;
 &lt;div&gt;
-    &lt;a href=&#34;#heading&#34;&gt;
+    &lt;a href=&#34;#%e8%ae%a9%e6%88%91%e6%98%a0%e5%83%8f%e6%b7%b1%e5%88%bb%e7%9a%84%e4%ba%ba%e7%89%a9&#34;&gt;
         ##
     &lt;/a&gt;
-    
+    让我映像深刻的人物
 &lt;/div&gt;
-&lt;/h3&gt;
+&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;第一当然是马汉山这个人物
+
+施工中......&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
     <item>
-      <title>Test3</title>
+      <title>Test</title>
       <link>/blog/test2/</link>
       <pubDate>Tue, 30 Jul 2024 20:47:48 +0800</pubDate>
       
       <guid>/blog/test2/</guid>
-      <description>&lt;h2 id=&#34;这是第二次测试&#34; &gt;
+      <description>&lt;h1 id=&#34;这是第二次测试&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#%e8%bf%99%e6%98%af%e7%ac%ac%e4%ba%8c%e6%ac%a1%e6%b5%8b%e8%af%95&#34;&gt;
-        #
+        ##
     &lt;/a&gt;
     这是第二次测试
 &lt;/div&gt;
-&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/blog/about/</link>
-      <pubDate>Tue, 30 Jul 2024 20:03:50 +0800</pubDate>
-      
-      <guid>/blog/about/</guid>
-      <description>&lt;h2 id=&#34;没错今天又开始捣鼓hugo了&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#%e6%b2%a1%e9%94%99%e4%bb%8a%e5%a4%a9%e5%8f%88%e5%bc%80%e5%a7%8b%e6%8d%a3%e9%bc%93hugo%e4%ba%86&#34;&gt;
-        #
-    &lt;/a&gt;
-    没错，今天又开始捣鼓hugo了
-&lt;/div&gt;
-&lt;/h2&gt;
-&lt;p&gt;time.date&lt;/p&gt;
+&lt;/h1&gt;
 </description>
     </item>
     
