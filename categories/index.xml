@@ -5,6 +5,8 @@
     <link>https://sunri.ink/categories/</link>
     <description>Recent content in Categories on SunR1&#39;s Internet Garden</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://sunri.ink/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <managingEditor>iguangzhengli@gmail.com (Guangzheng Li)</managingEditor>
+    <webMaster>iguangzhengli@gmail.com (Guangzheng Li)</webMaster><atom:link href="https://sunri.ink/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
