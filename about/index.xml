@@ -2,31 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on SunR1&#39;s Internet Garden</title>
-    <link>https/sunri.ink/about/</link>
-    <description>SunR1&#39;s Internet Garden (Abouts)</description>
+    <link>https://sunri.ink/about/</link>
+    <description>Recent content in Abouts on SunR1&#39;s Internet Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 02 Aug 2024 18:33:01 +0800</lastBuildDate>
-    
-    <atom:link href="https/sunri.ink/about/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>About</title>
-      <link>https/sunri.ink/about/about/</link>
-      <pubDate>Fri, 02 Aug 2024 18:33:01 +0800</pubDate>
-      
-      <guid>https/sunri.ink/about/about/</guid>
-      <description>&lt;h1 id=&#34;welcome-to-sunr1s-internet-garden-this-is-a-hugo-site-which-im-still-learning&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#welcome-to-sunr1s-internet-garden-this-is-a-hugo-site-which-im-still-learning&#34;&gt;
-        ##
-    &lt;/a&gt;
-    Welcome to SunR1&amp;rsquo;s internet garden, this is a hugo site, which I&amp;rsquo;m still learning.
-&lt;/div&gt;
-&lt;/h1&gt;
-</description>
-    </item>
-    
+    <lastBuildDate>Fri, 02 Aug 2024 18:33:01 +0800</lastBuildDate><atom:link href="https://sunri.ink/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,60 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on SunR1&#39;s Internet Garden</title>
-    <link>https/sunri.ink/blog/</link>
-    <description>SunR1&#39;s Internet Garden (Blogs)</description>
+    <link>https://sunri.ink/blog/</link>
+    <description>Recent content in Blogs on SunR1&#39;s Internet Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 02 Aug 2024 17:50:52 +0800</lastBuildDate>
-    
-    <atom:link href="https/sunri.ink/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 02 Aug 2024 17:50:52 +0800</lastBuildDate><atom:link href="https://sunri.ink/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>看完北平无战事 写一些感想</title>
-      <link>https/sunri.ink/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</link>
+      <link>https://sunri.ink/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</link>
       <pubDate>Fri, 02 Aug 2024 17:50:52 +0800</pubDate>
       
-      <guid>https/sunri.ink/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</guid>
-      <description>&lt;h1 id=&#34;为什么要看这部剧&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e7%9c%8b%e8%bf%99%e9%83%a8%e5%89%a7&#34;&gt;
-        ##
-    &lt;/a&gt;
-    为什么要看这部剧？
-&lt;/div&gt;
-&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;有幸看了刘和平老师的《大明王朝1566》这本书，深深的被故事情节所吸引啊，感觉里面的人个个都是人精，我还有好多可以学习的。
-&lt;/code&gt;&lt;/pre&gt;
+      <guid>https://sunri.ink/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</guid>
+      <description>&lt;h1 id=&#34;为什么要看这部剧&#34;&gt;为什么要看这部剧？&lt;/h1&gt;
+&lt;p&gt;有幸看了&lt;code&gt;#刘和平&lt;/code&gt;老师的 &lt;em&gt;《大明王朝1566》&lt;/em&gt; 这本书，深深的被故事情节所吸引啊，感觉里面的人个个都是人精，我还有好多可以学习的。&lt;/p&gt;
 &lt;p&gt;最近感觉自己又有些内耗，于是想找部剧看，放慢节奏，也让自己沉溺其中，不去想生活中的苟且吧，算是有点想逃避的感觉。于是乎，挑选一部好剧，大概率能吸引我的剧当让是一切的基础了，近年来完整看过的几部剧，想想有《狂飙》，《白夜追凶》，唉，有点想不起来了，但《狂飙》是让我很难受的一部剧，不是因为不精彩，而是因为前面太精彩但后面有点被“政治正确”了，导致我看到后面很难受。所以呢，选一部与当代政治没有太强联系的剧是我的第一标准（但其实最后也有点没挑太好，但好在《北平》这部剧本身够硬），其次呢，刘和平这三个字我认为是一部好剧很好的一个保证，所以看了一圈《北平》这部剧在豆瓣上有着9.0的高分，所以就选了这个。好了，感觉这部分写的有点多但感觉也不怎么详细。&lt;/p&gt;
-&lt;h1 id=&#34;让我映像深刻的人物&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#%e8%ae%a9%e6%88%91%e6%98%a0%e5%83%8f%e6%b7%b1%e5%88%bb%e7%9a%84%e4%ba%ba%e7%89%a9&#34;&gt;
-        ##
-    &lt;/a&gt;
-    让我映像深刻的人物
-&lt;/div&gt;
-&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;第一当然是马汉山这个人物
-
-施工中......&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;让我映像深刻的人物&#34;&gt;让我映像深刻的人物&lt;/h1&gt;
+&lt;p&gt;第一当然是马汉山这个人物&lt;/p&gt;
+&lt;p&gt;🚧&lt;strong&gt;施工中&amp;hellip;&amp;hellip;&lt;/strong&gt;🚧&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>https/sunri.ink/blog/test2/</link>
+      <link>https://sunri.ink/blog/test2/</link>
       <pubDate>Tue, 30 Jul 2024 20:47:48 +0800</pubDate>
       
-      <guid>https/sunri.ink/blog/test2/</guid>
-      <description>&lt;h1 id=&#34;这是第二次测试&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#%e8%bf%99%e6%98%af%e7%ac%ac%e4%ba%8c%e6%ac%a1%e6%b5%8b%e8%af%95&#34;&gt;
-        ##
-    &lt;/a&gt;
-    这是第二次测试
-&lt;/div&gt;
-&lt;/h1&gt;
+      <guid>https://sunri.ink/blog/test2/</guid>
+      <description>&lt;h1 id=&#34;这是第二次测试&#34;&gt;这是第二次测试&lt;/h1&gt;
 </description>
     </item>
     
