@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on SunR1&#39;s Internet Garden</title>
-    <link>/blog/</link>
+    <link>https/sunri.ink/blog/</link>
     <description>SunR1&#39;s Internet Garden (Blogs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 02 Aug 2024 17:50:52 +0800</lastBuildDate>
     
-    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https/sunri.ink/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>看完北平无战事 写一些感想</title>
-      <link>/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</link>
+      <link>https/sunri.ink/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</link>
       <pubDate>Fri, 02 Aug 2024 17:50:52 +0800</pubDate>
       
-      <guid>/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</guid>
+      <guid>https/sunri.ink/blog/%E5%8C%97%E5%B9%B3%E6%97%A0%E6%88%98%E4%BA%8B/</guid>
       <description>&lt;h1 id=&#34;为什么要看这部剧&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e7%9c%8b%e8%bf%99%e9%83%a8%e5%89%a7&#34;&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Test</title>
-      <link>/blog/test2/</link>
+      <link>https/sunri.ink/blog/test2/</link>
       <pubDate>Tue, 30 Jul 2024 20:47:48 +0800</pubDate>
       
-      <guid>/blog/test2/</guid>
+      <guid>https/sunri.ink/blog/test2/</guid>
       <description>&lt;h1 id=&#34;这是第二次测试&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#%e8%bf%99%e6%98%af%e7%ac%ac%e4%ba%8c%e6%ac%a1%e6%b5%8b%e8%af%95&#34;&gt;
