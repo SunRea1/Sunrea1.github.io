@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sunri.ink/blog/</loc>
-    <lastmod>2024-08-04T19:49:50+08:00</lastmod>
+    <loc>https://sunri.ink/learn/</loc>
+    <lastmod>2024-08-04T20:09:02+08:00</lastmod>
   </url><url>
     <loc>https://sunri.ink/</loc>
+    <lastmod>2024-08-04T20:09:02+08:00</lastmod>
+  </url><url>
+    <loc>https://sunri.ink/learn/%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</loc>
+    <lastmod>2024-08-04T20:09:02+08:00</lastmod>
+  </url><url>
+    <loc>https://sunri.ink/blog/</loc>
     <lastmod>2024-08-04T19:49:50+08:00</lastmod>
   </url><url>
     <loc>https://sunri.ink/blog/%E9%9C%B2%E8%90%A5/</loc>
     <lastmod>2024-08-04T19:49:50+08:00</lastmod>
   </url><url>
     <loc>https://sunri.ink/learn/cdn/</loc>
-    <lastmod>2024-08-02T23:34:13+08:00</lastmod>
-  </url><url>
-    <loc>https://sunri.ink/learn/</loc>
     <lastmod>2024-08-02T23:34:13+08:00</lastmod>
   </url><url>
     <loc>https://sunri.ink/blog/a_photo/</loc>
