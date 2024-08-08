@@ -14,7 +14,7 @@
       
       <guid>https://sunri.ink/blog/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B9%8B%E6%A2%A6/</guid>
       <description>&lt;p&gt;刚才看完了 &lt;code&gt;机器人之梦&lt;/code&gt; 这部电影，真的好温馨，虽然剧情上有点硬伤，但终归是瑕不掩瑜。
-![]{img/Robot.Dreams.2023-001.jpg}
+&lt;img src=&#34;img/Robot.Dreams.2023-001.jpg&#34;&gt;
 看之前我还例行去下载了字幕，结果全片没有一句话。。。
 机器人的画风好可爱，好温馨，简单的几笔就塑造出这种形象，确实厉害。&lt;/p&gt;
 </description>
@@ -27,8 +27,8 @@
       
       <guid>https://sunri.ink/blog/%E9%9C%B2%E8%90%A5/</guid>
       <description>&lt;h1 id=&#34;记录一次露营&#34;&gt;记录一次露营&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;img/photo_1_2024-08-04_20-03-22.jpg&#34;&gt;
-&lt;img src=&#34;img/photo_2_2024-08-04_20-03-22.jpg&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://sunri.ink/img/photo_1_2024-08-04_20-03-22.jpg&#34;&gt;
+&lt;img src=&#34;https://sunri.ink/img/photo_2_2024-08-04_20-03-22.jpg&#34;&gt;
 第一次钓上来一条鱼。
 吊床真舒服啊，改天自己一个人出去躺一下午，想想就爽啊。&lt;/p&gt;
 </description>
